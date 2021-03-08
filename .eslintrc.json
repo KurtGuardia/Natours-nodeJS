@@ -3,9 +3,9 @@
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "spaced-comment": "off",
-    "no-console": "warn",
-    "consistent-return": "off",
+    "spaced-comment": "off", 
+    "no-console": "warn", //So console.log throws warning instead of error
+    "consistent-return": "off", //So functions don't always need to return something
     "func-names": "off",
     "object-shorthand": "off",
     "no-process-exit": "off",
@@ -14,6 +14,6 @@
     "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "prefer-destructuring": ["error", { "object": true, "array": false }],
-    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }]
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val" }] //So un used varaibles are highlighted, except the ones in the object
   }
 }
